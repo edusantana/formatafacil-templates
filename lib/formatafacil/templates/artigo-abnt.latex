@@ -198,6 +198,7 @@ $resumo$
 
 \end{resumoumacoluna}
 
+
 % ]  				% FIM DE ARTIGO EM DUAS COLUNAS
 % ---
 
@@ -213,12 +214,33 @@ $body$
 % ----------------------------------------------------------
 \postextual
 
+$if(titulo_em_ingles)$
+% titulo em inglês
+\titulo{$titulo_em_ingles$}
+\emptythanks
+\maketitle
+$endif$
+
+$if(abstract)$
+% resumo em inglês
+\renewcommand{\resumoname}{Abstract}
+\begin{resumoumacoluna}
+ \begin{otherlanguage*}{english}
+   $abstract$
+ \end{otherlanguage*}  
+\end{resumoumacoluna}
+$endif$
+
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
 %\bibliography{abntex2-modelo-references}
 
 $if(bibliografia)$
+
+\section*{\hfil Referências\hfil}
+
+\setlength{\parskip}{1.5em}
 \begin{flushleft}
 $bibliografia$
 \end{flushleft}
