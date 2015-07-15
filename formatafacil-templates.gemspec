@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Templates of formatafacil}
   spec.description   = %q{Templates of formatafacil}
-  spec.homepage      = "https://github.com/edusantana/formatafacil-templates"
+  spec.homepage      = "https://github.com/formatafacil/formatafacil-templates"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
