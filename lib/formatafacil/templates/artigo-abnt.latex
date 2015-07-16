@@ -58,8 +58,7 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{nomencl} 			% Lista de simbolos
 \usepackage{color}				% Controle das cores
-\usepackage{graphicx}			% Inclusão de gráficos
-
+\usepackage{microtype} 		% para melhorias de justificação
 % Possibilita os gráficos escalarem
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -70,10 +69,8 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-
-
-
-\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{floatrow}                % Para colocar caption 
+\floatsetup[figure]{capposition=top} % no topo.
 % ---
 		
 % ---
