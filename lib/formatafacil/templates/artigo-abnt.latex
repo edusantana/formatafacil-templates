@@ -1,5 +1,5 @@
 %% abtex2-modelo-artigo.tex, v<VERSION> laurocesar
-%% Copyright 2012-2015 by abnTeX2 group at http://www.abntex.net.br/ 
+%% Copyright 2012-2015 by abnTeX2 group at http://www.abntex.net.br/
 %%
 %% This work may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3
@@ -10,9 +10,9 @@
 %% version 2005/12/01 or later.
 %%
 %% This work has the LPPL maintenance status `maintained'.
-%% 
+%%
 %% The Current Maintainer of this work is the abnTeX2 team, led
-%% by Lauro César Araujo. Further information are available on 
+%% by Lauro César Araujo. Further information are available on
 %% http://www.abntex.net.br/
 %%
 %% This work consists of the files abntex2-modelo-artigo.tex and
@@ -22,7 +22,7 @@
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
 % abnTeX2: Modelo de Artigo Acadêmico em conformidade com
-% ABNT NBR 6022:2003: Informação e documentação - Artigo em publicação 
+% ABNT NBR 6022:2003: Informação e documentação - Artigo em publicação
 % periódica científica impressa - Apresentação
 % ------------------------------------------------------------------------
 % ------------------------------------------------------------------------
@@ -32,7 +32,7 @@
 	article,			% indica que é um artigo acadêmico
 	11pt,				% tamanho da fonte
 	oneside,			% para impressão apenas no verso. Oposto a twoside
-	a4paper,			% tamanho do papel. 
+	a4paper,			% tamanho do papel.
 	% -- opções da classe abntex2 --
 	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
 	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
@@ -50,7 +50,7 @@
 % ---
 
 % ---
-% Pacotes fundamentais 
+% Pacotes fundamentais
 % ---
 \usepackage{lmodern}			% Usa a fonte Latin Modern
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
@@ -69,16 +69,16 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\usepackage{floatrow}                % Para colocar caption 
+\usepackage{floatrow}                % Para colocar caption
 \floatsetup[figure]{capposition=top} % no topo.
 % ---
-		
+
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
 \usepackage{lipsum}				% para geração de dummy text
 % ---
-		
+
 % ---
 % Pacotes de citações
 % ---
@@ -141,11 +141,11 @@
 \makeatletter
 \hypersetup{
      	%pagebackref=true,
-		pdftitle={\@title}, 
+		pdftitle={\@title},
 		pdfauthor={\@author},
     	pdfsubject={Modelo de artigo científico com abnTeX2},
 	    pdfcreator={LaTeX with abnTeX2},
-		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico},
 		colorlinks=true,       		% false: boxed links; true: colored links
     	linkcolor=blue,          	% color of internal links
     	citecolor=blue,        		% color of links to bibliography
@@ -154,7 +154,7 @@
 		bookmarksdepth=4
 }
 \makeatother
-% --- 
+% ---
 
 % ---
 % compila o indice
@@ -170,9 +170,9 @@
 \checkandfixthelayout
 % ---
 
-% --- 
-% Espaçamentos entre linhas e parágrafos 
-% --- 
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
 
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
@@ -193,7 +193,7 @@
 \selectlanguage{brazil}
 
 % Retira espaço extra obsoleto entre as frases.
-\frenchspacing 
+\frenchspacing
 
 % ----------------------------------------------------------
 % ELEMENTOS PRÉ-TEXTUAIS
@@ -204,8 +204,8 @@
 
 % resumo em português
 \begin{resumoumacoluna}
- 
-$resumo$ 
+
+$resumo$
 
 \end{resumoumacoluna}
 
@@ -238,7 +238,7 @@ $if(abstract)$
 \begin{resumoumacoluna}
  \begin{otherlanguage*}{english}
    $abstract$
- \end{otherlanguage*}  
+ \end{otherlanguage*}
 \end{resumoumacoluna}
 $endif$
 
