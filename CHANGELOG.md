@@ -1,5 +1,10 @@
 # formatafacil-template Change Log
 
+## 0.1.5
+
+- artigo-abnt importa pacote `longtable`
+
+
 ## 0.1.2
 
 - artigo-abnt posiciona caption de imagens no topo.
